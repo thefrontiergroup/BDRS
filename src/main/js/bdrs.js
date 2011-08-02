@@ -851,8 +851,9 @@ bdrs.map.createContentState = function(itemArray, popup, mapServerQueryManager) 
 	        var recordId = item["recordId"];
 	        var surveyId = item["surveyId"];
 	        var recordUrl = bdrs.contextPath + "/bdrs/user/surveyRenderRedirect.htm?surveyId=" + surveyId + "&recordId=" + recordId;
-	        jQuery("<a>View&nbsp;Record</a>").attr('href', recordUrl).appendTo(viewRecordRow);
-	        tbody.append(viewRecordRow);
+          // XXX: This needs to check if the perhaps-logged-in user is allowed to edit this record
+          // jQuery("<a>View&nbsp;Record</a>").attr('href', recordUrl).appendTo(viewRecordRow);
+          // tbody.append(viewRecordRow);
 			
 			for (var i = 0; i < recordAttrKeys.length; i++) {
 				var key = recordAttrKeys[i];
