@@ -12,11 +12,6 @@
         <put-attribute name="maps" value="true"/>
         <put-list-attribute name="customCss">
             <add-attribute>bdrs/bdrs.css</add-attribute>
-            <add-attribute>jpicker/jPicker-1.1.3.css</add-attribute>
-        </put-list-attribute>
-        <put-list-attribute name="customJavaScript">
-            
-            <add-attribute>jpicker/jpicker-1.1.3.js</add-attribute>
         </put-list-attribute>
     </definition>
 
@@ -27,19 +22,14 @@
         <put-attribute name="maps" value="true"/>
         <put-list-attribute name="customCss">
             <add-attribute>bdrs/bdrs.css</add-attribute>
-            <add-attribute>jpicker/jPicker-1.1.3.css</add-attribute>
-        </put-list-attribute>
-        <put-list-attribute name="customJavaScript">
-            
-            <add-attribute>jpicker/jpicker-1.1.3.js</add-attribute>
         </put-list-attribute>
     </definition>
-    
+
     <definition name="userProfile" extends="user-template">
     	<put-attribute name="title" value="Edit Account"/>
     	<put-attribute name="content" value="/WEB-INF/jsp/bdrs/user/profile.jsp"/>
     </definition>
-    
+
     <!-- User Meta Data Form Fields originally this was meant to be in vanilla_content.xml -->
     <!-- Use this tile inside a form to populate it with the configured user metadata -->
     <definition name="userMetaDataFormFields" template="/WEB-INF/jsp/vanilla/user/userMetaDataFormFields.jsp">
@@ -52,10 +42,10 @@
         <put-attribute name="content" value="/WEB-INF/jsp/bdrs/map/mySightings.jsp"/>
         <put-attribute name="maps" value="true"/>
         <put-list-attribute name="customJavaScript">
-            
+
         </put-list-attribute>
     </definition>
-    
+
     <!-- Advanced Review Sightings -->
     <definition name="advancedReview" extends="user-template">
         <put-attribute name="title" value="Sightings"/>
@@ -68,11 +58,11 @@
             <add-attribute>advancedReviewSightings.js</add-attribute>
         </put-list-attribute>
     </definition>
-    
+
     <definition name="advancedReviewFacet" template="/WEB-INF/jsp/bdrs/user/review/sightings/advancedReviewFacet.jsp">
         <put-attribute name="facet" type="object"/>
     </definition>
-    
+
     <definition name="advancedReviewMapView" template="/WEB-INF/jsp/bdrs/user/review/sightings/advancedReviewMapView.jsp">
         <put-attribute name="sortBy" type="object"/>
         <put-attribute name="sortOrder" type="object"/>
@@ -80,7 +70,7 @@
         <put-attribute name="pageCount" type="object"/>
         <put-attribute name="pageNumber" type="object"/>
     </definition>
-    
+
     <definition name="advancedReviewTableView" template="/WEB-INF/jsp/bdrs/user/review/sightings/advancedReviewTableView.jsp">
         <put-attribute name="sortBy" type="object"/>
         <put-attribute name="sortOrder" type="object"/>
@@ -107,10 +97,10 @@
             <add-attribute>bdrs/bdrs.css</add-attribute>
         </put-list-attribute>
         <put-list-attribute name="customJavaScript">
-            
+
         </put-list-attribute>
     </definition>
-    
+
     <!-- Record Form Field Renderer -->
     <definition name="formFieldRenderer" template="/WEB-INF/jsp/bdrs/user/record/render/formFieldRenderer.jsp">
         <put-attribute name="formField" type="object"/>
@@ -118,13 +108,13 @@
         <put-attribute name="errorMap" type="object"/>
         <put-attribute name="valueMap" type="object"/>
     </definition>
-    
+
     <definition name="formFieldListRenderer" template="/WEB-INF/jsp/bdrs/user/record/render/formFieldListRenderer.jsp">
         <put-attribute name="formField" type="object"/>
         <put-attribute name="errorMap" type="object"/>
         <put-attribute name="valueMap" type="object"/>
     </definition>
-    
+
     <!-- Property Renderer -->
     <definition name="propertyRenderer" template="/WEB-INF/jsp/bdrs/user/record/render/propertyRenderer.jsp">
         <put-attribute name="formField" type="object"/>
@@ -134,7 +124,7 @@
         <put-attribute name="errorMap" type="object"/>
         <put-attribute name="valueMap" type="object"/>
     </definition>
-    
+
     <!-- Attribute Renderer -->
     <definition name="attributeRenderer" template="/WEB-INF/jsp/bdrs/user/record/render/attributeRenderer.jsp">
         <put-attribute name="formField" type="object"/>
@@ -149,10 +139,10 @@
             <add-attribute>bdrs/bdrs.css</add-attribute>
         </put-list-attribute>
         <put-list-attribute name="customJavaScript">
-            
+
         </put-list-attribute>
     </definition>
-    
+
     <!-- Atlas -->
     <definition name="atlas" extends="user-template">
         <put-attribute name="title" value="Record a Sighting"/>
@@ -162,10 +152,10 @@
             <add-attribute>bdrs/bdrs.css</add-attribute>
         </put-list-attribute>
         <put-list-attribute name="customJavaScript">
-            
+
         </put-list-attribute>
     </definition>
-    
+
     <definition name="atlasVerticalFormFieldRenderer" template="/WEB-INF/jsp/bdrs/user/record/render/atlas/atlasVerticalFormFieldRenderer.jsp">
         <put-attribute name="formField" type="object"/>
         <put-attribute name="label" type="object"/>
@@ -185,10 +175,10 @@
             <add-attribute>bdrs/bdrs.css</add-attribute>
         </put-list-attribute>
         <put-list-attribute name="customJavaScript">
-            
+
         </put-list-attribute>
     </definition>
-    
+
     <!-- Single Site Multi Taxa -->
     <definition name="singleSiteMultiTaxa" extends="user-template">
         <put-attribute name="title" value="Single Site Multiple Species"/>
@@ -198,10 +188,10 @@
             <add-attribute>bdrs/bdrs.css</add-attribute>
         </put-list-attribute>
         <put-list-attribute name="customJavaScript">
-            
+
         </put-list-attribute>
     </definition>
-    
+
     <definition name="singleSiteMultiTaxaRow" template="/WEB-INF/jsp/bdrs/user/record/render/singleSiteMultiTaxa/singleSiteMultiTaxaRow.jsp">
         <put-attribute name="sightingIndex"/>
         <put-attribute name="record"/>
@@ -211,7 +201,7 @@
         <!--<put-attribute name="attribute"/>
         <put-attribute name="index"/>-->
     </definition>
-    
+
     <!-- No Script Message -->
     <definition name="noscriptMessage" template="/WEB-INF/jsp/bdrs/user/record/render/noscript.jsp"></definition>
 
@@ -244,7 +234,7 @@
         <put-attribute name="showHelp" value="true"/>
         <put-attribute name="extraContent" value=""/>
     </definition>
-    
+
     <!-- Embedded -->
     <definition name="widgetBuilder" extends="user-template">
         <put-attribute name="title" value="Create Embedded Widget"/>
@@ -256,7 +246,7 @@
             <add-attribute>embedded.js</add-attribute>
         </put-list-attribute>
     </definition>
-    
+
     <!-- Managed Files -->
     <definition name="managedFileList" extends="user-template">
         <put-attribute name="title" value="Managed Files Listing"/>
@@ -272,7 +262,7 @@
         <put-list-attribute name="customCss"></put-list-attribute>
         <put-list-attribute name="customJavaScript"></put-list-attribute>
     </definition>
-    
+
     <!-- MV cut and paste below here -->
     <definition name="student-template" extends="template"/>
 
@@ -329,5 +319,5 @@
             <add-attribute>ketchup/jquery.ketchup.basic.min.js</add-attribute>
         </put-list-attribute>
     </definition>
-    
+
 </tiles-definitions>

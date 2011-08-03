@@ -171,7 +171,6 @@
 <script type="text/javascript">
     jQuery(function() {
         bdrs.map.initBaseMap('record_base_map', { geocode: { selector: '#geocode' }});
-        //jQuery(".colorpicker").jPicker({images: { clientPath: '${pageContext.request.contextPath}/images/jpicker/' }});
     });
 
 </script>
